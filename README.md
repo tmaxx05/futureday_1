@@ -23,5 +23,4 @@ Tạo file `.env` (theo mẫu `.env.example`) và điền `VITE_SHEET_URL` bằn
 ## Deploy Vercel
 Import repo, Framework Preset chọn Vite (tự nhận), Build `npm run build`, Output `dist`.
 
-## Cần thay bằng thông tin thật
-Số điện thoại, Zalo, email, địa chỉ, tên nhà phân phối, bảng giá điện và sản lượng trong `src/data/production.json`.
+
