@@ -1,0 +1,6 @@
+[
+ {"r":"north","vi":"Hà Nội","en":"Hanoi"},{"r":"central","vi":"Thanh Hóa","en":"Thanh Hoa"},{"r":"south","vi":"TP.HCM","en":"Ho Chi Minh City"},
+ {"r":"north","vi":"Hải Phòng","en":"Hai Phong"},{"r":"central","vi":"Nghệ An","en":"Nghe An"},{"r":"south","vi":"Bình Dương","en":"Binh Duong"},
+ {"r":"north","vi":"Bắc Ninh","en":"Bac Ninh"},{"r":"central","vi":"Đà Nẵng","en":"Da Nang"},{"r":"south","vi":"Đồng Nai","en":"Dong Nai"},
+ {"r":"north","vi":"Quảng Ninh","en":"Quang Ninh"},{"r":"central","vi":"Khánh Hòa","en":"Khanh Hoa"},{"r":"south","vi":"Cần Thơ","en":"Can Tho"}
+]

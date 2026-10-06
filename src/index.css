@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+:root{--bg:#FFF7F0;--paper:#FFFFFF;--ink:#1E1915;--mut:#5E5750;--line:#EBD8C6;--cta:#D04A0A;--sun:#F7B21B;--leaf:#2F7D5B;--pan:#1B4F7A;--h1:#FCEFB4;--h2:#FBE3C6;--h3:#E7EEE2;--cme:#FBE9C9}
+.dark{--bg:#0E1D2B;--paper:#14283A;--ink:#EAF3F8;--mut:#A9BED0;--line:#27435A;--leaf:#5BC79A;--pan:#2C6EA3;--h1:#2B2A1A;--h2:#1D2A2E;--h3:#10222E;--cme:#1D2A2E}
+@theme inline{--color-bg:var(--bg);--color-paper:var(--paper);--color-ink:var(--ink);--color-mut:var(--mut);--color-line:var(--line);--color-cta:var(--cta);--color-sun:var(--sun);--color-leaf:var(--leaf);--color-pan:var(--pan);--color-cme:var(--cme);--font-display:"Bricolage Grotesque","Be Vietnam Pro",system-ui,sans-serif;--font-sans:"Be Vietnam Pro",system-ui,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-sans);line-height:1.65;padding-top:env(safe-area-inset-top,0px);transition:background .3s,color .3s}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.hero-bg{position:relative;overflow:hidden;background:radial-gradient(900px 560px at var(--gx,22%) -6%,rgba(250,204,60,var(--ga,.9)),rgba(250,204,60,0) 66%),radial-gradient(700px 500px at 100% 20%,rgba(244,163,138,.32),rgba(244,163,138,0) 70%),linear-gradient(135deg,var(--h1) 0%,var(--h2) 60%,var(--h3) 100%)}
+.hero-bg::before{content:"";position:absolute;left:calc(var(--gx,22%) - 600px);top:-600px;width:1200px;height:1200px;border-radius:50%;background:repeating-conic-gradient(from 180deg at 50% 50%,rgba(255,200,70,.2) 0 5deg,transparent 5deg 15deg);-webkit-mask:radial-gradient(circle,#000 0,transparent 60%);mask:radial-gradient(circle,#000 0,transparent 60%);pointer-events:none}
+.hero-bg::after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:linear-gradient(180deg,transparent,var(--bg));pointer-events:none}
+.hero-bg>*{position:relative;z-index:1}
+.stage{box-shadow:0 24px 60px -24px rgba(242,168,29,.55)}
+.stage svg{display:block;width:100%;height:auto;touch-action:pan-y}
+.marq{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;width:max-content;animation:marq 45s linear infinite}
+.marq:hover .track{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}.marq{overflow-x:auto}}
